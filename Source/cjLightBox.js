@@ -1,6 +1,21 @@
-/********************************************************************
- CJ's LightBox 1.0 by Chris Jiang <jiangcat@gmail.com>
- ********************************************************************/
+/*
+---
+description: A javascript cross-platform compatible (hopefully) photo light box plug-in for MooTools.
+
+license: MIT-style
+
+authors:
+- Chris Jiang
+
+requires:
+ - core/1.4.5:   '*'
+ - more:1.4.0.1/Element.Measure
+ - more:1.4.0.1/Keyboard
+
+provides:
+ - cjLightBox
+...
+*/
 
 (function(){
 
@@ -15,14 +30,6 @@ var cjLightBox = this.cjLightBox = new Class({
 	Implements: [Options, Events],
 
 	options: {
-		// onAttach: function(element){},
-		// onDetach: function(element){},
-		// onShow: function(element){},
-		// onHide: function(){},
-		// onNext: function(element){},
-		// onPrevious: function(element){},
-		// onClear: function(){},
-		// onDestroy: function(){},
 		idPrefix: 'cjLightBox',
 		loopView: false,
 		localeOptions: {
