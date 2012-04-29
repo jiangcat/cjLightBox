@@ -1,0 +1,142 @@
+/* CJ Light Box */
+
+#cjLightBoxMask {
+	position: fixed;
+	*position: absolute; /* IE6 */
+	z-index: 2000;
+	background: #000;
+}
+
+#cjLightBox {
+	position: fixed;
+	*position: absolute; /* IE6 */
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 200px;
+	z-index: 2001;
+	padding: 10px 15px 0px 15px;
+}
+	#cjLightBoxHead {
+		height: 30px;
+		overflow: hidden;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+		#cjLightBoxHeadTitle {
+			font-size: 16px;
+			color: #999;
+			font-family: 'MS Yahei', Tahoma, Arial, Simsun;
+			font-weight: bold;
+			padding: 0px;
+			float: left;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		#cjLightBoxHeadClose {
+			float: right;
+			padding: 4px 0px 0px 0px;
+			white-space: nowrap;
+		}
+	#cjLightBoxContent {
+		position: relative;
+		display: block;
+		background-color: #fff;
+		width: 200px;
+		height: 150px;
+		overflow: hidden;
+	}
+		#cjLightBoxContent.loading {
+			background: url('./loading.gif') no-repeat 50% 50%;
+		}
+		#cjLightBoxContentPrev {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 3;
+			height: 75px;
+			width: 100px;
+		}
+		#cjLightBoxContentNext {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 3;
+			height: 75px;
+			width: 100px;
+		}
+			#cjLightBoxContentPrevBtn, #cjLightBoxContentNextBtn {
+				position: absolute;
+				z-index: 4;
+				background-color: #fff;
+				width: auto;
+				font-size: 18px;
+				font-weight: bold;
+				color: #999;
+				line-height: 100%;
+			}
+			#cjLightBoxContentPrevBtn {
+				padding: 10px 15px 10px 5px;
+				-webkit-border-radius: 0 7px 7px 0;
+				-moz-border-radius-topright: 7px;
+				-moz-border-radius-bottomright: 7px;
+				-o-border-radius: 0 7px 7px 0;
+				border-radius: 0 7px 7px 0;
+			}
+			#cjLightBoxContentNextBtn {
+				padding: 10px 5px 10px 15px;
+				-webkit-border-radius: 7px 0 0 7px;
+				-moz-border-radius-topleft: 7px;
+				-moz-border-radius-bottomleft: 7px;
+				-o-border-radius: 7px 0 0 7px;
+				border-radius: 7px 0 0 7px;
+			}
+		#cjLightBoxContentMask {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;
+			background-color: #fff;
+			height: 150;
+			width: 200x;
+			width: 200px;
+			height: 150px;
+		}
+		#cjLightBoxContentPhoto {
+			position: relative;
+			z-index: 1;
+			display: block;
+			width: 200px;
+			height: 150px;
+		}
+	#cjLightBoxFoot {
+		height: 23px;
+		text-align: center;
+		overflow: hidden;
+	}
+		#cjLightBoxFootUL {
+			list-style: none;
+			padding: 0;
+			margin: 11px 0px 0px 0px;
+			line-height: 100%;
+			height: 7px;
+		}
+			#cjLightBoxFootUL li {
+				display: inline-block;
+				*display: inline;		/* IE6,7 */
+				zoom: 1;				/* IE6,7 */
+				width: 7px;
+				height: 7px;
+				background-color: #aaa;
+				margin-right: 2px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				-o-border-radius: 3px;
+				border-radius: 3px;
+			}
+				#cjLightBoxFootUL li:last-child {
+					margin: 0px;
+				}
+				#cjLightBoxFootUL li.active {
+					background-color: #666;
+				}
