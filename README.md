@@ -38,20 +38,20 @@ Public Methods
   1. data - (object)
    data - (object) Data of the gallery, structured as below:
 
-	var albumdata = {
-		// Can be empty string.
-		title : 'Name of the album',
-		// Where the files are stored.
-		pdir : 'path/to/photo/files',
-		// List of photos in an array to be displayed.
-		// List items can be either type of array or string.
-		plist : [
-			// Array containing file name and the title of photo.
-			['1.jpg', 'My Dog'],
-			// String of a file, the title will be auto replaced with the album name.
-			'2.jpg'
-		]
-	}
+		var albumdata = {
+			// Can be empty string.
+			title : 'Name of the album',
+			// Where the files are stored.
+			pdir : 'path/to/photo/files',
+			// List of photos in an array to be displayed.
+			// List items can be either type of array or string.
+			plist : [
+				// Array containing file name and the title of photo.
+				['1.jpg', 'My Dog'],
+				// String of a file, the title will be auto replaced with the album name.
+				'2.jpg'
+			]
+		};
 
 * showPhoto([index]) - Open the box if it's not already opened, and show the specific photo.
   1. index - (number,optional) The index number of photo you want to show. If not present, will show the first one.
@@ -85,6 +85,7 @@ Notes
 
 * The structure of photo box is shown as below:
 
+	<!--
 	<div id="cjLightBoxMask" style="width:2000px;height:2000px;"></div>
 	<div id="cjLightBox">
 		<div id="cjLightBoxHead">
@@ -109,3 +110,4 @@ Notes
 			</ul>
 		</div>
 	</div>
+	-->
