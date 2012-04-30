@@ -16,7 +16,7 @@ Arguments:
 
 Options:
 
-1. idPrefix - (string: defaults to 'cjLightBox') The layer id of the DOM element which contains the cjLightBox.
+1. idPrefix - (string: defaults to 'cjLightBox') It will be the ID of the main DOM container, and also the prefix of all the ids of the DOM elements inside.
 2. loopView - (boolean: defaults to false) If the gallery should rewind to the first photo when clicking 'next' on the last.
 3. localeOptions - (object)
    * phraseClose - (string: defaults to '[CLOSE]') Text of the close button on the upper right corner of the box.
@@ -37,13 +37,19 @@ Public Methods
 * setGalleryData(data) - To set data of the gallery. The method should be set when the box is not, and BEFORE showing.
   1. data - (object)
    data - (object) Data of the gallery, structured as below:
-	{
-		title : 'Name of the album',	// Can be empty string.
-		pdir : 'path/to/photo/files',	// Where the files are stored.
-		plist : [						// List of photos in an array to be displayed.
-										// List items can be either type of array or string.
-			['1.jpg', 'My Dog'],		// Array containing file name and the title of photo.
-			'2.jpg'						// String of a file, the title will be auto replaced with the album name.
+
+	var albumdata = {
+		// Can be empty string.
+		title : 'Name of the album',
+		// Where the files are stored.
+		pdir : 'path/to/photo/files',
+		// List of photos in an array to be displayed.
+		// List items can be either type of array or string.
+		plist : [
+			// Array containing file name and the title of photo.
+			['1.jpg', 'My Dog'],
+			// String of a file, the title will be auto replaced with the album name.
+			'2.jpg'
 		]
 	}
 
